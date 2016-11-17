@@ -1,0 +1,411 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=42;
+	};
+	class MarkerIDProvider
+	{
+		nextID=30;
+	};
+	class LayerIndexProvider
+	{
+		nextID=8;
+	};
+	class Camera
+	{
+		pos[]={889.18591,1554.1156,732.11981};
+		dir[]={0.83593667,-0.39490563,0.38133496};
+		up[]={0.35944939,0.91864043,0.16397092};
+		aside[]={0.41506174,1.3567733e-006,-0.90987825};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=1677375;
+class ScenarioData
+{
+	author="SamJ ♥ KG";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.44999999;
+		startFog=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.44999999;
+		forecastFog=0.15000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2011;
+		month=4;
+		hour=15;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Layer";
+			name="Markers";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Layer";
+					name="Villages+";
+					class Entities
+					{
+						items=16;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={3980.1111,-8.7221381e-021,13688.164};
+							name="Village_Al_Jebel";
+							type="Empty";
+							id=5;
+							atlOffset=-365.58087;
+						};
+						class Item1
+						{
+							dataType="Marker";
+							position[]={6007.4458,-1.6756219e-032,17146.141};
+							name="Village_Alkhemora";
+							type="Empty";
+							id=4;
+							atlOffset=-157.78464;
+						};
+						class Item2
+						{
+							dataType="Marker";
+							position[]={9669.2783,-7.789135e-016,15334.521};
+							name="Village_Gonzalabad";
+							type="Empty";
+							id=10;
+							atlOffset=-2.8314047;
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={9487.5049,-2.2179073e-033,17011.207};
+							name="Village_Scarzirah";
+							type="Empty";
+							id=8;
+							atlOffset=-5.9862685;
+						};
+						class Item4
+						{
+							dataType="Marker";
+							position[]={10495.82,-6.4201113e-014,15948.898};
+							name="Village_Sulakhira";
+							type="Empty";
+							id=9;
+							atlOffset=-7.5910306;
+						};
+						class Item5
+						{
+							dataType="Marker";
+							position[]={9519.4883,-2.5860669e-018,12404.256};
+							name="Village_Hysad";
+							type="Empty";
+							id=14;
+							atlOffset=-214.13863;
+						};
+						class Item6
+						{
+							dataType="Marker";
+							position[]={10495.194,1.9433621e+018,16714.73};
+							name="Village_Agresoran";
+							type="Empty";
+							id=18;
+							atlOffset=1.9433621e+018;
+						};
+						class Item7
+						{
+							dataType="Marker";
+							position[]={14228.238,-6.3256556e-014,16899.777};
+							name="Village_Kepsora";
+							type="Empty";
+							id=20;
+							atlOffset=-8.7282934;
+						};
+						class Item8
+						{
+							dataType="Marker";
+							position[]={18739.189,-2.553629e-013,19283.125};
+							name="Village_Lotohafaz";
+							type="Empty";
+							id=23;
+							atlOffset=-8.9200487;
+						};
+						class Item9
+						{
+							dataType="Marker";
+							position[]={13867.401,4.9147344e-024,8035.9082};
+							name="Village_Spetzyahir";
+							type="Empty";
+							id=24;
+							atlOffset=-753.75153;
+						};
+						class Item10
+						{
+							dataType="Marker";
+							position[]={18539.234,-8.7616909e-020,12545.137};
+							name="Village_Al_Riyal";
+							type="Empty";
+							id=28;
+							atlOffset=-223.34497;
+						};
+						class Item11
+						{
+							dataType="Marker";
+							position[]={17167.896,-8.7616909e-020,11360.061};
+							name="Village_Kenykmheni";
+							type="Empty";
+							id=27;
+							atlOffset=-313.5282;
+						};
+						class Item12
+						{
+							dataType="Marker";
+							position[]={15639.019,4.3315327e-024,9003.3359};
+							name="Village_Lolosalam";
+							type="Empty";
+							id=26;
+							atlOffset=-515.62103;
+						};
+						class Item13
+						{
+							dataType="Marker";
+							position[]={17081.639,-1.2651529e-011,5950.4531};
+							name="Village_Machifazar";
+							type="Empty";
+							id=31;
+							atlOffset=-1009.1865;
+						};
+						class Item14
+						{
+							dataType="Marker";
+							position[]={18616.373,-1.2655026e-011,9108.3252};
+							name="Village_Mandingara";
+							type="Empty";
+							id=30;
+							atlOffset=-184.04646;
+						};
+						class Item15
+						{
+							dataType="Marker";
+							position[]={19545.744,-8.7616909e-020,11795.747};
+							name="Village_Marmakur";
+							type="Empty";
+							id=29;
+							atlOffset=-98.613663;
+						};
+					};
+					id=11;
+					atlOffset=1.8978145e+015;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="Towns";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={7900.3271,7.0356069e+033,18041.672};
+							name="Town_Demenazhir";
+							type="Empty";
+							id=3;
+							atlOffset=7.0356069e+033;
+						};
+						class Item1
+						{
+							dataType="Marker";
+							position[]={7459.582,-9.9677965e-023,19804.316};
+							name="Town_Guyosabir";
+							type="Empty";
+							id=2;
+							atlOffset=-2.8314047;
+						};
+						class Item2
+						{
+							dataType="Marker";
+							position[]={9683.2803,-3.2683097e-015,16454.75};
+							name="Town_Yanotabir";
+							type="Empty";
+							id=7;
+							atlOffset=-8.3746071;
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={17684.684,-2.553629e-013,18078.18};
+							name="Town_Mini_Al_Malak";
+							type="Empty";
+							id=22;
+							atlOffset=-8.7566309;
+						};
+						class Item4
+						{
+							dataType="Marker";
+							position[]={12661.046,-2.5860669e-018,16496.24};
+							name="Town_Ovallestan";
+							type="Empty";
+							id=19;
+							atlOffset=-3.0082283;
+						};
+					};
+					id=12;
+					atlOffset=4.3972543e+032;
+				};
+				class Item2
+				{
+					dataType="Layer";
+					name="Military Bases";
+					class Entities
+					{
+						items=7;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={4892.1621,-2.2284162e-033,13770.676};
+							name="MB_Mike1";
+							type="Empty";
+							id=6;
+							atlOffset=-491.17499;
+						};
+						class Item1
+						{
+							dataType="Marker";
+							position[]={8442.4316,-2.5869007e-018,10570.828};
+							name="MB_Punta_Cuervo";
+							type="Empty";
+							id=15;
+							atlOffset=-678.62103;
+						};
+						class Item2
+						{
+							dataType="Marker";
+							position[]={8197.2256,-3.7371447e-025,8672.7939};
+							name="MB_Robstrepo";
+							type="Empty";
+							id=16;
+							atlOffset=-1190.0795;
+						};
+						class Item3
+						{
+							dataType="Marker";
+							position[]={11030.852,1.9850028e+018,19644.885};
+							name="MB_Baker_Outpost";
+							type="Empty";
+							id=17;
+							atlOffset=1.9850028e+018;
+						};
+						class Item4
+						{
+							dataType="Marker";
+							position[]={15649.946,-2.553629e-013,17248.67};
+							name="MB_Camp_Branca";
+							type="Empty";
+							id=21;
+							atlOffset=-7.0657525;
+						};
+						class Item5
+						{
+							dataType="Marker";
+							position[]={14203.569,4.3315327e-024,8342.5684};
+							name="MB_Camp_Kinno";
+							type="Empty";
+							id=25;
+							atlOffset=-813.815;
+						};
+						class Item6
+						{
+							dataType="Marker";
+							position[]={17477.4,-7.0942467e-021,6067.48};
+							name="MB_Mike2";
+							type="Empty";
+							id=32;
+							atlOffset=-1069.1461;
+						};
+					};
+					id=13;
+					atlOffset=1.2406267e+017;
+				};
+			};
+			id=33;
+			atlOffset=1.0993136e+032;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10.00384,826.72974,2.5248601};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=41;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=40;
+		};
+	};
+};

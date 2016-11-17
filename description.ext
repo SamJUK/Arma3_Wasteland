@@ -1,0 +1,14 @@
+enableItemsDropping = 0;
+joinUnassigned = 0;
+author="TRF Development Team";
+OnLoadName = "TRF Wasteland";
+OnLoadMission = "Under Development";
+allowFunctionsRecompile = 1;
+enableDebugConsole = 2;
+respawn = "BASE";
+
+//Functions
+  class CfgFunctions
+  {
+      #include "Functions.h"
+  };
