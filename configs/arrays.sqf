@@ -99,6 +99,7 @@ Choppers = [
   ["UK3CB_BAF_Wildcat_AH1_CAS_6D",500,true,false]
 ];
 Jets = [
+  ["B_Plane_CAS_01_F",500,true,false]
 ];
 
 /*

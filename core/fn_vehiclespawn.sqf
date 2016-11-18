@@ -32,8 +32,13 @@ while {totalvehicles < maxvehicles} do {
 
     //Location to spawn
     _pos = ['Any']call TRF_fnc_rndTownPos;
-    _veh = createVehicle [_classname, _pos, [], 0, "NONE"];
-    _veh setDir round random (360 - 1);
+    if (!isNil{_classname} && !isNil{_pos})then {
+      _veh = createVehicle [_classname, _pos, [], 0, "NONE"];
+      _veh setDir round random (360 - 1);
+      clearWeaponCargoGlobal _veh;
+      clearMagazineCargoGlobal _veh;
+      clearItemCargoGlobal _veh;
 
-    totalvehicles = totalvehicles + 1;
+      totalvehicles = totalvehicles + 1;
+    };
 };

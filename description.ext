@@ -7,6 +7,10 @@ allowFunctionsRecompile = 1;
 enableDebugConsole = 2;
 respawn = "BASE";
 
+//GUI
+  //Styling
+  #include "dialogs\init.sqf"
+
 //Functions
   class CfgFunctions
   {
