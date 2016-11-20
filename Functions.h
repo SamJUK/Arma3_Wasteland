@@ -5,12 +5,14 @@ class TRF_Framework
   {
     file = "core";
 		class rndTownPos {};
+    class rndPosInTown{};
     class keyhandler{};
     class WindowsKey{};
     class WindowsKeyPopulate{};
     class SpawnLoadout{};
     class openBargates{};
     class switchAnimation{};
+    class Spawn{};
   };
   class BuildingSupplies
   {
@@ -42,10 +44,12 @@ class TRF_Framework
   class Spawn
   {
     file = "core\spawn";
-		class vehiclespawn {};
-    class buildingsupplyspawn{};
-		class spawn {};
-    class vehicleCargo{};
+		class SpawnVehicles {};
+    class SpawnBuildingSupplies{};
+		class SpawnPlayer {};
+    class SpawnVehicleCargo{};
+    class SpawnMenu{};
+    class SpawnMenuPopulate{};
   };
   class Store
   {
@@ -64,4 +68,11 @@ class TRF_Framework
     class MedicalRespawned{};
     class MedicalRevive{};
   };
+  class Admintools
+  {
+    file = "core\Admin";
+    class AdmintoolsLoad{};
+    class Admintools_targetChanged{};
+    class Admintools_cmd_GodMode{};
+  }
 };

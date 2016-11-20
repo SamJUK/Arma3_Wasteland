@@ -28,7 +28,9 @@ if (!(player getVariable "BleedingOut"))then
 
   true
 }else{
+  cutText ["","BLACK",0.0000001];
+  _newUnit setPos [0,0,0];
   player setVariable ["BleedingOut", false, true];
   closeDialog 0;
-  []spawn TRF_fnc_spawn;
+  []spawn TRF_fnc_SpawnMenu;
 };

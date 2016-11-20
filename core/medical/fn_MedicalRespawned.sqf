@@ -1,5 +1,6 @@
 closeDialog 0;
 player setVariable ["BleedingOut", false, true];
-[]call TRF_fnc_Spawn;
+cutText ["","BLACK",0.0000001];
+[]call TRF_fnc_SpawnMenu;
 
 [[player,""],"TRF_fnc_switchAnimation"] call BIS_fnc_MP;

@@ -40,7 +40,7 @@ while {totalvehicles < maxvehicles} do {
       clearMagazineCargoGlobal _veh;
       clearItemCargoGlobal _veh;
       clearBackpackCargoGlobal _veh;
-      [_veh]spawn TRF_fnc_vehicleCargo;
+      [_veh]spawn TRF_fnc_SpawnVehicleCargo;
 
       totalvehicles = totalvehicles + 1;
     };

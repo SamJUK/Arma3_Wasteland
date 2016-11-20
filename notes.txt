@@ -34,3 +34,10 @@ Spawn Screen
   Random Town
   Town occupied by team (Side / group out number enemies in it)
   Military Bases' (Side or Group Own)
+
+Nuilding STuff
+  Smaller/ Larger Increminets
+
+    .5/1/2
+    1/5/10
+    .25/1/5

@@ -5,7 +5,7 @@ waituntil {!isnull (finddisplay 46)};
 
 sleep 2;
 
-[]call TRF_fnc_spawn;
+[]call TRF_fnc_SpawnMenu;
 []execVM "core\statusBar.sqf";
 
 player setVariable ["TRF_Cash",0];

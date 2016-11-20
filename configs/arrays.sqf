@@ -8,6 +8,7 @@
 Admins = [
   "76561198055520389"
 ];
+VIPs = [];
 /*
   Loadouts
 */
@@ -16,7 +17,10 @@ AdminLoadouts = [
   [["sma_minimi_mk3_762tsb_des","sma_gemtech_one_des","","SMA_ELCAN_SPECTER_TAN_RDS",["SMA_150Rnd_762_M80A1",150],[],""],[],["rhsusf_weap_m9","","","",["rhsusf_mag_15Rnd_9x19_JHP",15],[],""],["milgp_u_tshirt_g3_field_pants_mc",[["rhsusf_mag_15Rnd_9x19_JHP",1,15]]],["milgp_v_marciras_marksman_belt_cb",[["rhsusf_mag_15Rnd_9x19_JHP",2,15],["SMA_150Rnd_762_M80A1",2,150]]],["rhsusf_assault_eagleaiii_coy",[["rhsusf_mag_15Rnd_9x19_JHP",5,15],["SMA_150Rnd_762_M80A1",2,150]]],"maritime_helmet_tan","TRYK_Shemagh_shade",["Binocular","","","",[],[],""],["ItemMap","","","","","A3_GPNVG18_F"]],
   [["SMA_Mk17_16","SMA_supptan_762","SMA_SFPEQ_SCARTOP_TAN","SMA_ELCAN_SPECTER_TAN_RDS",["SMA_20Rnd_762x51mm_M80A1_EPR",20],[],"bipod_01_F_snd"],[],["rhsusf_weap_m9","","","",["rhsusf_mag_15Rnd_9x19_JHP",15],[],""],["milgp_u_tshirt_g3_field_pants_mc",[["rhsusf_mag_15Rnd_9x19_JHP",1,15],["SMA_20Rnd_762x51mm_M80A1_EPR",1,20]]],["milgp_v_marciras_marksman_belt_cb",[["rhsusf_mag_15Rnd_9x19_JHP",2,15],["SMA_20Rnd_762x51mm_M80A1_EPR",11,20]]],["rhsusf_assault_eagleaiii_coy",[["rhsusf_mag_15Rnd_9x19_JHP",5,15]]],"maritime_helmet_tan","TRYK_Shemagh_shade",["Binocular","","","",[],[],""],["ItemMap","","","","","A3_GPNVG18_F"]]
 ];
-
+/*Admin Commands*/
+AdminCMDs = [
+  ["God Mode", "TRF_fnc_Admintools_cmd_GodMode"]
+];
 Towns = [
   ["Town_Guyosabir", [150,300]],
   ["Town_Demenazhir", [350,250]],

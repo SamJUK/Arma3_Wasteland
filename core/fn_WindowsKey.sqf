@@ -23,10 +23,18 @@ _conditions = [
 	[
 		[cursorObject isKindOf "Man" && cursorObject in playableunits && (player distance cursorObject) < 5],
 		"Person"
+	],
+	//Admin
+	[
+		[(getPlayerUID player) in Admins],
+		"Admin"
 	]
 ];
+_arr = [];
 {
 	if ((_x select 0) select 0)then {
-		[_x select 1]call TRF_fnc_WindowsKeyPopulate;
+		_arr pushBack (_x select 1);
 	};
 }forEach _conditions;
+if (count _arr == 0)exitWith{};
+[_arr]call TRF_fnc_WindowsKeyPopulate;

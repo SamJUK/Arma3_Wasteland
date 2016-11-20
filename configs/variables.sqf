@@ -13,3 +13,6 @@ DeathInfo_Distance = Nil;
 BleedingOut = false;
 bleedouttimer = 180;
 bleedtime = 180;
+
+
+UsingAdminTools = false;
