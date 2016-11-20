@@ -1,0 +1,36 @@
+Admin Tools
+  Add Cash / Bank to player
+  Open Arsenal
+  Revive Player
+  Heal Player
+  Kill Player
+  Eject Player
+  Kick Player
+  Teleport
+  Toggle Front Teleport
+  Spawn Vehicles
+  God Mode
+  Vehicle Markers
+  Player Markers
+
+
+Medical System
+  Death Screen
+    Killer
+      Name
+      Weapon
+      Distance
+    Respawn Button
+    Bleed out timer (3minutes)
+
+  Revive
+    Takes 20 seconds
+    Progress Bar
+    Drag/Carry/Drop Bodies
+    stabilize (Increase Bleed out timer by 10 minutes)
+
+
+Spawn Screen
+  Random Town
+  Town occupied by team (Side / group out number enemies in it)
+  Military Bases' (Side or Group Own)

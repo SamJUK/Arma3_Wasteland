@@ -16,8 +16,13 @@ _conditions = [
 	],
 	//Vendor
 	[
-		[!isNil{cursorObject getVariable "Vendor"} && (player distance cursorObject) < 5],
+		[!isNil{cursorObject getVariable "TRF_Vendor"} && (player distance cursorObject) < 5],
 		"Vendor"
+	],
+	//Person
+	[
+		[cursorObject isKindOf "Man" && cursorObject in playableunits && (player distance cursorObject) < 5],
+		"Person"
 	]
 ];
 {

@@ -10,7 +10,14 @@ removeGoggles player;
 player forceAddUniform "U_I_C_Soldier_Bandit_5_F";
 player addHeadgear "H_Beret_Colonel";
 player addGoggles "G_Shades_Black";
-player addItem "Itemmap";
+player linkItem "Itemmap";
+
+if ((getplayerUID player) in Admins)then {
+  ['Admin']call TRF_fnc_SpawnLoadout;
+};
+
+(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
+(findDisplay 46) displayAddEventHandler ["KeyDown","_this select 1 spawn TRF_fnc_Keyhandler;false;"];
 
 _spawnLocType = round random 5;
 switch true do {
@@ -25,3 +32,5 @@ switch true do {
       player setPos _pos;
     };
 };
+
+cutText ["","BLACK IN",5];

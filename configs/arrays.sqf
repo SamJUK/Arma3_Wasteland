@@ -5,6 +5,18 @@
     Var2 = Int: XCoord - Area extends x meters from marker pos along x axis
     Var3 = Int: YCoord - Area extends x meters from marker pos along y axis
 */
+Admins = [
+  "76561198055520389"
+];
+/*
+  Loadouts
+*/
+AdminLoadouts = [
+  [["SMA_MK18MOETAN","SMA_supp1tan_556","SMA_SFPEQ_MK18TOP_TAN","SMA_eotech552_3XDOWN_des",["SMA_30Rnd_556x45_M855A1",30],[],""],[],["rhsusf_weap_m9","","","",["rhsusf_mag_15Rnd_9x19_JHP",15],[],""],["milgp_u_tshirt_g3_field_pants_mc",[["SMA_30Rnd_556x45_M855A1",3,30],["rhsusf_mag_15Rnd_9x19_JHP",1,15]]],["milgp_v_marciras_marksman_belt_cb",[["rhsusf_mag_15Rnd_9x19_JHP",2,15]]],["rhsusf_assault_eagleaiii_coy",[["SMA_30Rnd_556x45_M855A1",9,30],["rhsusf_mag_15Rnd_9x19_JHP",5,15]]],"maritime_helmet_tan","TRYK_Shemagh_shade",["Binocular","","","",[],[],""],["ItemMap","","","","","A3_GPNVG18_F"]],
+  [["sma_minimi_mk3_762tsb_des","sma_gemtech_one_des","","SMA_ELCAN_SPECTER_TAN_RDS",["SMA_150Rnd_762_M80A1",150],[],""],[],["rhsusf_weap_m9","","","",["rhsusf_mag_15Rnd_9x19_JHP",15],[],""],["milgp_u_tshirt_g3_field_pants_mc",[["rhsusf_mag_15Rnd_9x19_JHP",1,15]]],["milgp_v_marciras_marksman_belt_cb",[["rhsusf_mag_15Rnd_9x19_JHP",2,15],["SMA_150Rnd_762_M80A1",2,150]]],["rhsusf_assault_eagleaiii_coy",[["rhsusf_mag_15Rnd_9x19_JHP",5,15],["SMA_150Rnd_762_M80A1",2,150]]],"maritime_helmet_tan","TRYK_Shemagh_shade",["Binocular","","","",[],[],""],["ItemMap","","","","","A3_GPNVG18_F"]],
+  [["SMA_Mk17_16","SMA_supptan_762","SMA_SFPEQ_SCARTOP_TAN","SMA_ELCAN_SPECTER_TAN_RDS",["SMA_20Rnd_762x51mm_M80A1_EPR",20],[],"bipod_01_F_snd"],[],["rhsusf_weap_m9","","","",["rhsusf_mag_15Rnd_9x19_JHP",15],[],""],["milgp_u_tshirt_g3_field_pants_mc",[["rhsusf_mag_15Rnd_9x19_JHP",1,15],["SMA_20Rnd_762x51mm_M80A1_EPR",1,20]]],["milgp_v_marciras_marksman_belt_cb",[["rhsusf_mag_15Rnd_9x19_JHP",2,15],["SMA_20Rnd_762x51mm_M80A1_EPR",11,20]]],["rhsusf_assault_eagleaiii_coy",[["rhsusf_mag_15Rnd_9x19_JHP",5,15]]],"maritime_helmet_tan","TRYK_Shemagh_shade",["Binocular","","","",[],[],""],["ItemMap","","","","","A3_GPNVG18_F"]]
+];
+
 Towns = [
   ["Town_Guyosabir", [150,300]],
   ["Town_Demenazhir", [350,250]],
@@ -28,6 +40,17 @@ Villages = [
   ["Village_Kepsora", [400,200]],
   ["Village_Lotohafaz", [200,100]],
   ["Village_Lolosalam", [150,100]]
+];
+MilitaryBases = [
+/*
+  Hidden Marker Variable, Text Marker Variable, size
+*/
+  ["MB_Mike1", "MB_Mike1Text", [200,150]],
+  ["MB_Mike2", "MB_Mike2Text", [200,150]],
+  ["MB_Punta_Cuervo", "MB_Punta_CuervoText", [100,100]],
+  ["MB_Robstrepo", "MB_RobstrepoText", [100,100]],
+  ["MB_Camp_Kinno", "MB_Camp_KinnoText", [100,100]],
+  ["MB_Baker_Outpost", "MB_Baker_OutpostText", [50,50]]
 ];
 /*
   Vehicle Arrays
@@ -127,4 +150,142 @@ building_supplies=[
   ["Land_Mil_WallBig_Gate_F",50,true,false,true],
   ["Land_Net_Fence_Gate_F",50,true,false,true],
   ["Land_PortableLight_double_F",50,true,false,true]
+];
+
+TRFItems = [
+  // Classname, Price, Normal Shop, Special Shop, Spawnable?
+  //Clothing
+  [
+   ["milgp_u_fleece_grey_g3_field_pants_3CD",500,true,false,true],
+   ["milgp_u_fleece_grey_g3_field_pants_M81",500,true,false,true],
+   ["milgp_u_fleece_khk_g3_field_pants_aor1",500,true,false,true],
+   ["Gen3_aor1",500,true,false,true],
+   ["Gen3_atacsau",500,true,false,true],
+   ["Gen3_Blk",500,true,false,true],
+   ["Gen3_Multicam",500,true,false,true],
+   ["Gen3_Tan",500,true,false,true],
+   ["U_B_CombatUniform_mcam",500,true,false,true],
+   ["U_B_CombatUniform_mcam_tshirt",500,true,false,true],
+   ["U_I_G_resistanceLeader_F",500,true,false,true],
+   ["U_I_CombatUniform",500,true,false,true],
+   ["U_I_OfficerUniform",500,true,false,true],
+   ["rhs_uniform_cu_ocp",500,true,false,true],
+   ["rhs_uniform_cu_ucp",500,true,false,true],
+
+   ["U_I_G_Story_Protagonist_F",500,true,false,true],
+   ["U_C_Poor_1",500,true,false,true],
+   ["U_B_Wetsuit",500,true,false,true],
+   ["TRYK_U_B_WOOD_MARPAT_CombatUniformTshirt",500,true,false,true],
+   ["TRYK_B_USMC_R",500,true,false,true],
+   ["TRYK_B_TRYK_UCP_T",500,true,false,true],
+   ["TRYK_U_B_TANOCP_R_CombatUniformTshirt",500,true,false,true],
+   ["TRYK_ZARATAKI",500,true,false,true],
+   ["TRYK_U_taki_G_COY",500,true,false,true],
+   ["TRYK_shirts_TAN_PAD_BLW",500,true,false,true],
+   ["TRYK_U_B_PCUHs",500,true,false,true],
+   ["TRYK_U_Bts_UCP_PCUs",500,true,false,true],
+   ["TRYK_U_B_MARPAT_Wood",500,true,false,true],
+   ["TRYK_U_B_3CD_Delta_BDU",500,true,false,true],
+   ["TRYK_U_B_ARO1_CBR_R_CombatUniform",500,true,false,true],
+   ["rhs_uniform_FROG01_d",500,true,false,true]
+  ],
+  //Vests
+  [
+    ["milgp_v_marciras_assaulter_cb",500,true,false,true],
+    ["milgp_v_marciras_assaulter_belt_cb",500,true,false,true],
+    ["milgp_v_marciras_hgunner_belt_cb",500,true,false,true],
+    ["milgp_v_marciras_light_cb",500,true,false,true],
+    ["milgp_v_marciras_medic_cb",500,true,false,true],
+    ["cpc_tlbelt_coy",500,true,false,true],
+    ["cpc_Fastbelt_coy",500,true,false,true],
+    ["cpc_Fast_coy",500,true,false,true],
+    ["cpc_communications_coy",500,true,false,true],
+    ["lbt_operator_coy",500,true,false,true],
+    ["rhsusf_spc",500,true,false,true],
+    ["rhsusf_spc_squadleader",500,true,false,true],
+    ["rhsusf_spc_iar",500,true,false,true],
+    ["rhsusf_spcs_ocp_rifleman",500,true,false,true],
+    ["TRYK_V_tacv1LC_CY",500,true,false,true]
+  ],
+  //Backpack
+  [
+    ["B_Bergen_mcamo_F",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_DDPM_Rifleman_B",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_DPMW_Rifleman_B",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_MTP_Engineer_L_A",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_MTP_Medic_H_A",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_MTP_Medic_L_A",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_MTP_PointMan_L_A",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_MTP_Sapper_H_A",500,true,false,true],
+    ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B",500,true,false,true],
+    ["UK3CB_BAF_B_Carryall_DDPM",500,true,false,true],
+    ["UK3CB_BAF_B_Carryall_MTP",500,true,false,true],
+    ["rhsusf_assault_eagleaiii_coy",500,true,false,true],
+    ["rhsusf_assault_eagleaiii_ocp",500,true,false,true],
+    ["UK3CB_BAF_B_Kitbag_MTP",500,true,false,true]
+  ],
+  //Headgear
+  [
+    ["maritime_helmet_od",500,true,false,true],
+    ["maritime_helmet_tan",500,true,false,true],
+    ["VSM_Peltor_OD",500,true,false,true],
+    ["VSM_Bowman_cap_Tan",500,true,false,true],
+    ["rhs_8point_marpatd",500,true,false,true],
+    ["TRYK_r_cap_tan_Glasses",500,true,false,true],
+    ["TRYK_H_PASGT_COYO",500,true,false,true],
+    ["TRYK_H_Helmet_MARPAT_Desert2",500,true,false,true],
+    ["TRYK_H_AOR1",500,true,false,true],
+    ["rhsusf_opscore_ut_pelt_nsw_cam",500,true,false,true],
+    ["TRYK_H_ghillie_top_headless3",500,true,false,true],
+    ["TRYK_H_Booniehat_MARPAT_Desert",500,true,false,true],
+    ["rhsusf_mich_bare_norotos_tan_headset",500,true,false,true],
+    ["rhsusf_lwh_helmet_marpatd_headset",500,true,false,true]
+  ],
+  //Eyewear
+  [
+    ["rhs_googles_black",500,true,false,true],
+    ["TRYK_TAC_SET_TAN_2",500,true,false,true],
+    ["TRYK_Beard_BW4",500,true,false,true],
+    ["TRYK_Beard_BK3",500,true,false,true],
+    ["TRYK_kio_balaclava_ESS",500,true,false,true],
+    ["TRYK_kio_balaclavas",500,true,false,true],
+    ["UK3CB_BAF_G_Tactical_Orange",500,true,false,true],
+    ["UK3CB_BAF_G_Tactical_Grey",500,true,false,true],
+    ["G_Shades_Black",500,true,false,true],
+    ["rhs_scarf",500,true,false,true],
+    ["G_Bandanna_shades",500,true,false,true]
+  ],
+  //NVGS
+  [
+    ["rhsusf_ANPVS_14",500,true,false,true],
+    ["rhsusf_ANPVS_15",500,true,false,true],
+    ["A3_GPNVG18b_F",500,true,false,true],
+    ["A3_GPNVG18_BLK_TI",500,true,false,true],
+    ["UK3CB_BAF_HMNVS",500,true,false,true],
+    ["NVGoggles_OPFOR",500,true,false,true]
+  ],
+  //Primarys
+  [
+    ["SMA_MK18MOETAN_SM",500,true,false,true],
+    ["SMA_MK18TAN_GL_SM",500,true,false,true],
+    ["SMA_MK18afgTAN",500,true,false,true],
+    ["SMA_MK18MOE",500,true,false,true],
+    ["hlc_rifle_M21",500,true,false,true],
+    ["SMA_MK16_EGLM_Green",500,true,false,true],
+    ["SMA_MK16",500,true,false,true],
+    ["SMA_Mk17_16",500,true,false,true],
+    ["hlc_rifle_SAMR",500,true,false,true],
+    ["FHQ_srifle_M2010_WDESERT",500,true,false,true],
+    ["FHQ_arifle_ACR_tan",500,true,false,true],
+    ["SMA_ACRMOE",500,true,false,true],
+    ["SMA_ACR",500,true,false,true]
+  ],
+  //Sidearms
+  [
+    ["rhsusf_weap_glock17g4",500,true,false,false],
+    ["rhsusf_weap_m1911a1",500,true,false,true],
+    ["rhsusf_weap_m9",500,true,false,true],
+    ["hgun_Rook40_F",500,true,false,true],
+    ["rhs_weap_M320",500,true,false,true]
+  ]
 ];

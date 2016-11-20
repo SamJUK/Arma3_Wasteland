@@ -4,13 +4,13 @@ class TRF_Framework
   class Core
   {
     file = "core";
-		class spawn {};
 		class rndTownPos {};
-		class vehiclespawn {};
-    class buildingsupplyspawn{};
     class keyhandler{};
     class WindowsKey{};
     class WindowsKeyPopulate{};
+    class SpawnLoadout{};
+    class openBargates{};
+    class switchAnimation{};
   };
   class BuildingSupplies
   {
@@ -38,5 +38,30 @@ class TRF_Framework
     class VehiclePullout{};
     class VehiclePush{};
     class VehicleFlip{};
+  };
+  class Spawn
+  {
+    file = "core\spawn";
+		class vehiclespawn {};
+    class buildingsupplyspawn{};
+		class spawn {};
+    class vehicleCargo{};
+  };
+  class Store
+  {
+    file = "core\store";
+    class StoreOpen{};
+  };
+  class Trader
+  {
+    file = "core\trader";
+    class TraderSafezone{};
+  };
+  class Medical
+  {
+    file = "core\medical";
+    class MedicalDeathScreen{};
+    class MedicalRespawned{};
+    class MedicalRevive{};
   };
 };

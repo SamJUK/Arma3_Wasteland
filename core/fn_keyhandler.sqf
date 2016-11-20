@@ -1,5 +1,6 @@
 private['_handled'];
 _handled = false;
+//systemChat str _this;
 switch (_this) do {
 
     /*
@@ -10,7 +11,7 @@ switch (_this) do {
     */
 
     case 4: {
-      player setPosATL [((getPosATL player) select 0) + 5 * sin(getDir player),((getPosATL player) select 1) + 5 * cos(getDir player),0];
+      (vehicle player) setPosATL [((getPosATL (vehicle player)) select 0) + 5 * sin(getDir (vehicle player)),((getPosATL (vehicle player)) select 1) + 5 * cos(getDir (vehicle player)),0];
 		  _handled = true;
     };
 
@@ -19,6 +20,12 @@ switch (_this) do {
 		  player action ["SwitchWeapon", player, player, 100];
 		  _handled = true;
 	   };
+
+     //Letter 0
+     case 24: {
+       []spawn TRF_fnc_openBargates;
+       _handled = true;
+     };
 
     //Windows Key Left
     case 219:{

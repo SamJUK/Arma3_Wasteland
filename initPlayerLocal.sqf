@@ -1,8 +1,13 @@
+cutText ["","BLACK",0.0000001];
 waituntil {!isnull (finddisplay 46)};
-(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
-(findDisplay 46) displayAddEventHandler ["KeyDown","_this select 1 spawn TRF_fnc_Keyhandler;false;"];
+[]execVM "configs\variables.sqf";
+[]execVM "configs\arrays.sqf";
+
+sleep 2;
 
 []call TRF_fnc_spawn;
+[]execVM "core\statusBar.sqf";
 
 player setVariable ["TRF_Cash",0];
 player setVariable ["TRF_Bank",0];
+player setVariable ["BleedingOut",false];

@@ -24,7 +24,13 @@ switch(_this select 0)do {
 	};
 	case "Vendor": {
 		_stuff = [
-			["Open Store", [true]]
+			["Open Store", TRF_fnc_StoreOpen, [(typeOf cursorObject) == "SignAd_Sponsor_F" && (cursorObject distance player) < 5 && (cursorObject getVariable "TRF_Vendor")]]
+		];
+	};
+	case "Person": {
+		_stuff = [
+			["Revive", TRF_fnc_MedicalRevive, [cursorObject getVariable "BleedingOut" && (side CursorObject == side player || group player == group CursorObject)]]/*,
+			["Give Money", TRF_fnc_MoneyGive, [true]]*/
 		];
 	};
 };
@@ -43,3 +49,4 @@ _i = 0;
 	buttonSetAction [(_buttons select _i),format["%1",_x select 1]];
   _i = _i + 1;
 } forEach _activebuttons;
+if (count _activebuttons == 0) then {closeDialog 0};

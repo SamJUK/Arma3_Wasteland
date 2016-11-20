@@ -33,11 +33,14 @@ while {totalvehicles < maxvehicles} do {
     //Location to spawn
     _pos = ['Any']call TRF_fnc_rndTownPos;
     if (!isNil{_classname} && !isNil{_pos})then {
+      while {_pos distance (getPos (nearestBuilding _pos)) < 10}do {_pos = ['Any']call TRF_fnc_rndTownPos;};
       _veh = createVehicle [_classname, _pos, [], 0, "NONE"];
       _veh setDir round random (360 - 1);
       clearWeaponCargoGlobal _veh;
       clearMagazineCargoGlobal _veh;
       clearItemCargoGlobal _veh;
+      clearBackpackCargoGlobal _veh;
+      [_veh]spawn TRF_fnc_vehicleCargo;
 
       totalvehicles = totalvehicles + 1;
     };
