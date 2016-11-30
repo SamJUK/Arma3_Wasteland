@@ -29,7 +29,11 @@ switch true do {
 	};
 	case ("Person" in (_this select 0)): {
 		_stuff = [
-			["Revive", "TRF_fnc_MedicalRevive", [cursorObject getVariable "BleedingOut" && (side CursorObject == side player || group player == group CursorObject)]]/*,
+			["Revive", "TRF_fnc_MedicalRevive", [cursorObject getVariable "BleedingOut" && (side CursorObject == side player || group player == group CursorObject)]],
+			["Drag", "TRF_fnc_MedicalDrag", [cursorObject getVariable "BleedingOut" && isNil{cursorObject getVariable "TRF_BeingDragged"} && isNil{cursorObject getVariable "TRF_BeingCarried"}]],
+			["Carry", "TRF_fnc_MedicalCarry", [cursorObject getVariable "BleedingOut" && isNil{CursorObject getVariable "TRF_BeingCarried"}]],
+			["Drop", "TRF_fnc_MedicalDrop", [!isNil{player getVariable "TRF_CarryingPlayer"} || !isNil{player getVariable "TRF_Draggingplayer"}]],
+			["Stabalize", "TRF_fnc_MedicalStabalize", [cursorObject getVariable "BleedingOut" && isNil{cursorObject getVariable "Stabalized"}]]/*,
 			["Give Money", TRF_fnc_MoneyGive, [true]]*/
 		];
 	};

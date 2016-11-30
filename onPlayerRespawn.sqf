@@ -1,6 +1,6 @@
 _newUnit = _this select 0;
 _oldUnit = _this select 1;
-if (!(player getVariable "BleedingOut"))then
+if (!(player getVariable "BleedingOut") || isNil{player getVariable "Bledout"})then
 {
   player setVariable ["BleedingOut", true, true];
 
@@ -31,6 +31,7 @@ if (!(player getVariable "BleedingOut"))then
   cutText ["","BLACK",0.0000001];
   _newUnit setPos [0,0,0];
   player setVariable ["BleedingOut", false, true];
+  player setVariable ["BledOut",false,true];
   closeDialog 0;
   []spawn TRF_fnc_SpawnMenu;
 };

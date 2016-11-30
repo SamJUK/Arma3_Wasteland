@@ -16,3 +16,9 @@ bleedtime = 180;
 
 
 UsingAdminTools = false;
+TPFront = false;
+
+GroupsArray = [];
+
+noEsc = false;
+BuildingMode = false;

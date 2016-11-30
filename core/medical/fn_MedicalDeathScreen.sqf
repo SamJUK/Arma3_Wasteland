@@ -18,6 +18,7 @@ bleedtime = 180;
 while {player getVariable "BleedingOut"} do {
   if (bleedtime <= 0)then {
     player setVariable ["BleedingOut", false, true];
+    player setVariable ["BledOut",true,true];
     ctrlSetText[1003, "You Have Bleed Out"];
   };
   _percent = bleedtime / bleedouttimer;

@@ -1,17 +1,16 @@
-buildingShitClassnames = [];
+_buildingShitClassnames = [];
 {
-	buildingShitClassnames pushBack (_x select 0);
+	_buildingShitClassnames pushBack (_x select 0);
 }forEach building_supplies;
-
 _conditions = [
 	//Building Stuff
 	[
-		[((typeOf cursorObject) in buildingShitClassnames && (player distance cursorObject) < 5) || count (attachedObjects player) > 0],
+		[((typeOf cursorObject) in _buildingShitClassnames && (player distance cursorObject) < 5) || count (attachedObjects player) > 0],
 		"Building"
 	],
 	//Vehicle
 	[
-		[((typeOf cursorObject) isKindOf "AllVehicles") && (player distance cursorObject) < 5],
+		[(((typeOf cursorObject) isKindOf "LandVehicle") || ((typeOf cursorObject) isKindOf "Air")) && (player distance cursorObject) < 5],
 		"Vehicle"
 	],
 	//Vendor
@@ -36,5 +35,6 @@ _arr = [];
 		_arr pushBack (_x select 1);
 	};
 }forEach _conditions;
+
 if (count _arr == 0)exitWith{};
-[_arr]call TRF_fnc_WindowsKeyPopulate;
+[_arr]spawn TRF_fnc_WindowsKeyPopulate;

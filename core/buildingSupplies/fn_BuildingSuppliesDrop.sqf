@@ -3,7 +3,7 @@ detach _obj;
 _obj setVariable ["TRF_Moving", false, true];
 _obj setVariable ["TRF_Mover", Nil, true];
 
-(findDisplay 46) displayRemoveEventHandler ["KeyDown", BuildingObjectsKeyHandler];
+BuildingMode = false;
 
 [
    format[''],

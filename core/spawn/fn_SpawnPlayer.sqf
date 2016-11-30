@@ -15,6 +15,7 @@ player linkItem "Itemmap";
 
 if ((getplayerUID player) in Admins)then {
   ['Admin']call TRF_fnc_SpawnLoadout;
+  player setVariable ["TRF_Bank", 50000];
 };
 
 (findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
@@ -41,4 +42,5 @@ if (isNil{_this select 0} || (_this select 0) == "rnd")then{
   player setDir (round random 360);
 };
 
+player setdamage 0;
 cutText ["","BLACK IN",5];

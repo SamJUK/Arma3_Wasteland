@@ -3,3 +3,4 @@
 #include "dead.hpp"
 #include "spawn.hpp"
 #include "admintools.hpp"
+#include "clothingShop.hpp"

@@ -9,6 +9,7 @@ Admins = [
   "76561198055520389"
 ];
 VIPs = [];
+WordBlackList = [];
 /*
   Loadouts
 */
@@ -19,8 +20,20 @@ AdminLoadouts = [
 ];
 /*Admin Commands*/
 AdminCMDs = [
-  ["God Mode", "TRF_fnc_Admintools_cmd_GodMode"]
+  ["God Mode", "TRF_fnc_Admintools_cmd_GodMode"],
+  ["Open Arsenal", "TRF_fnc_Admintools_cmd_Arsenal"],
+  ["Revive Player", "TRF_fnc_Admintools_cmd_Revive"],
+  ["Heal Player", "TRF_fnc_Admintools_cmd_Heal"],
+  ["Eject Player", "TRF_fnc_Admintools_cmd_Eject"],
+  ["Kick Player", "TRF_fnc_Admintools_cmd_Kick"],
+  ["Teleport", "TRF_fnc_Admintools_cmd_Teleport"],
+  ["Toggle Front Teleport", "TRF_fnc_Admintools_cmd_ToggleFrontTP"],
+  ["Spawn Vehicles", "TRF_fnc_Admintools_cmd_SpawnVehicles"],
+  ["Vehicle Markers", "TRF_fnc_Admintools_cmd_VehicleMarkers"],
+  ["Player Markers", "TRF_fnc_Admintools_cmd_PlayerMarkers"],
+  ["Add Cash / Bank to player", "TRF_fnc_Admintools_cmd_AddMoney"]
 ];
+
 Towns = [
   ["Town_Guyosabir", [150,300]],
   ["Town_Demenazhir", [350,250]],

@@ -10,13 +10,13 @@ if (!isNil {camera})then{
   camDestroy camera;
 };
 
-_angle = 360 - getDir _target;
-_cords = [_target, 2, _angle] call BIS_fnc_relPos;
-_alt = ((getPosATL _target) select 2) + 2;
+_angle = getDir player;
+_cords = [player, 2, _angle] call BIS_fnc_relPos;
+_alt = ((getPosATL player) select 2) + 2;
 _cords set [2, _alt];
 camera = "camera" camCreate _cords;
 camera cameraEffect ["INTERNAL","BACK"];
 showCinemaBorder false;
-camera camPrepareFOV 1;
-camera camPrepareTarget _target;
-camera camCommitPrepared 3;
+camera camPrepareFOV .3;
+camera camPrepareTarget player;
+camera camCommitPrepared 0;
